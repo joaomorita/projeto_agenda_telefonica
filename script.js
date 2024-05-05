@@ -9,6 +9,10 @@ btn.addEventListener('click', function(e){
     let telefone = document.getElementById('numero-telefone')
     const corpoTabela = document.querySelector('tbody')
 
+    if(nome.value == ''){
+        nome.value = 'Contato'
+    }
+
     if(telefone.value == 0){
         alert('Digite um telefone')
     }else{
